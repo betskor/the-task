@@ -1,0 +1,21 @@
+
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import ProductDetails from "./pages/ProductDetails.jsx";
+import "../src/App.css";
+
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+
+      <Route
+        path="/products/:id"
+        element={<ProductDetails />}
+      />
+    </Routes>
+  );
+}
+
+export default App;
